@@ -1,4 +1,3 @@
-
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -20,18 +19,15 @@ function getCookie(name) {
     return null;
 }
 
-
 function eraseCookie(name) {
     document.cookie = name + '=; Max-Age=-99999999;';
 }
-
 
 setCookie('user', JSON.stringify({
     name: 'Adriel Gideon Benedict Sirait',
     nim: '121140196',
     kelas: 'RC'
 }), 1);
-
 
 var userFromCookie = getCookie('user');
 if (userFromCookie) {
