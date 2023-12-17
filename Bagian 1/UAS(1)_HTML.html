@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAS Pemrograman web</title>
+  <style>
+    body{
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        text-align: left;
+        padding: 20px;
+        border: 1px solid rgb(168, 163, 163);
+        border-radius: 8px;
+        max-width: 800px; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <p>Nama : Adriel Gideon Benedict Sirait </p>
+        <p>NIM : 121140196 </p>
+        <p>Kelas : RC </p>
+
+        <h1>UAS Pemrograman Web</h1>
+        <br>
+
+        <form id="dataForm">
+            <table>
+                <tr>
+                    <td><label for="name">Nama</label></td>
+                    <td>: <input type="text" id="name" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="umur">Umur</label></td>
+                    <td>: <input type="number" id="umur" name="umur"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="hobi">Hobi</label></td>
+                    <td>: 
+                    <input type="checkbox" id="hobi" name="hobi"> Membaca
+                    <input type="checkbox" id="hobi" name="hobi"> Menulis 
+                    <input type="checkbox" id="hobi" name="hobi"> Bermain Game
+                    <input type="checkbox" id="hobi" name="hobi"> Memancing
+                    <input type="checkbox" id="hobi" name="hobi"> Melukis 
+                    <input type="checkbox" id="hobi" name="hobi"> Menari 
+                    <input type="checkbox" id="hobi" name="hobi"> Menyanyi
+                    <input type="checkbox" id="hobi" name="hobi"> Olahraga
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Jenis Kelamin</label></td>
+                    <td>: 
+                        <input type="radio" id="laki-laki" name="jeniskelamin" value="Laki-Laki">
+                        <label for="laki-laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jeniskelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+            
+        </form>
+
+        <table id="dataTable">
+            <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Hobi</th>
+                <th>Jenis Kelamin</th>
+            </tr>
+            </thead>
+            <tbody>
+                <?php
+                  include 'UAS(3)_PHP.php';
+                  include 'UAS(4)_PHP';
+                  include 'UAS(2)_PHP.php';
+                  
+                  displayFormData();
+                ?>
+            </tbody>
+        </table>
+
+        <script src="UAS(1)_JavaScript.js"></script>
+        <script src="UAS(4)_JavaScript.js"></script>
+    </div>
+
+
+</body>
+</html>
