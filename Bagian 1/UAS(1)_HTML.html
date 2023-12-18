@@ -13,16 +13,6 @@
         justify-content: center;
     }
 
-    .container{
-        text-align: left;
-        padding: 20px;
-        border: 1px solid rgb(168, 163, 163);
-        border-radius: 8px;
-        max-width: 800px; 
-        width: 100%;
-        box-sizing: border-box;
-    }
-
     table {
       border-collapse: collapse;
       width: 100%;
@@ -39,6 +29,7 @@
     }
   </style>
 </head>
+  
 <body>
     <div class="container">
         <p>Nama : Adriel Gideon Benedict Sirait </p>
@@ -83,12 +74,11 @@
                         <label for="perempuan">Perempuan</label>
                     </td>
                 </tr>
+              
                 <tr>
-
                     <td colspan="2"><input type="submit" value="Submit"></td>
                 </tr>
             </table>
-            
         </form>
 
         <table id="dataTable">
@@ -103,7 +93,7 @@
             <tbody>
                 <?php
                   include 'UAS(3)_PHP.php';
-                  include 'UAS(4)_PHP';
+                  include 'UAS(4)_PHP.php';
                   include 'UAS(2)_PHP.php';
                   
                   displayFormData();
@@ -112,9 +102,6 @@
         </table>
 
         <script src="UAS(1)_JavaScript.js"></script>
-        <script src="UAS(4)_JavaScript.js"></script>
     </div>
-
-
 </body>
 </html>
