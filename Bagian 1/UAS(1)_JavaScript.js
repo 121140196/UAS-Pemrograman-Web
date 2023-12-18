@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function processData() {
       var name = document.getElementById('name').value;
       var umur = document.getElementById('umur').value;
-      var hobi = document.getElementById('hobi').checked ? 'Membaca' : 'Menulis';
+      var hobi = document.getElementById('hobi').checked;
       var jeniskelamin = document.querySelector('input[name="kelas"]:checked').value;
   
       var newRow = document.createElement('tr');
