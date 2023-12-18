@@ -38,13 +38,8 @@ class FormData {
 
 function displayFormData() {
     global $conn;
-
-    // Simulasi database (array sementara)
     $formEntries = [];
-
-    // Cek apakah formulir telah dikirim
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // Mengambil nilai dari formulir
         $name = $_POST['name'] ?? '';
         $umur = $_POST['umur'] ?? '';
         $hobi = isset($_POST['hobi']) ? 'Membaca' : 'Menulis';
