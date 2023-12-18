@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Name and Umur harus dipilih');
         return false;
       }
-  
       return true;
     }
   
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
   
       document.getElementById('dataTable').getElementsByTagName('tbody')[0].appendChild(newRow);
-  
       document.getElementById('dataForm').reset();
     }
 });
